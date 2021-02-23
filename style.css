@@ -151,7 +151,7 @@ h3 {
     background-color: black;
     color: white;
     text-align: center;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -160,8 +160,16 @@ h3 {
     position: fixed;
     bottom: 5px;
     right: 5px;
-    opacity: 80%;
+    opacity: 60%;
+    transition-duration: .75s;
 }
+
 #top:hover {
     opacity: 100%;
 }
+
+#top p {
+    margin-top: 31px;
+}
+
+
