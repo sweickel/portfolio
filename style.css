@@ -41,14 +41,14 @@ nav {
     height: 60vh;
     width: 100%;
     background-color: #3E7CB1;
-    margin: 5px;
-    background-image: url(/img/hero.jpg);
+    margin: 0px;
+    background-image: url(/portfolio/img/hero.jpg);
     background-size: cover;
     border-radius: 5px;
 }
 
 #overlay {
-    background-color: black;
+    background: linear-gradient(#585858, #000000);
     opacity: 75%;
     width: 100%;
     height: 100%;
@@ -73,20 +73,37 @@ nav {
     font-weight: 600;
 }
 
-#skills-wrapper {
-    background-color: #3E7CB1;
+.boxes {
+width: 50%;
+height: auto;
+opacity: 35%;
+position: absolute;
+z-index: 2;
+align-self: flex-start;
+}
+#box-two {
+    margin-top: 1780px;
+    opacity: 35%;
+}
+
+.wrapper {
+    display: flex;
+    margin-top: 50px;
     width: 65%;
     height: auto;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px black;
     align-items: center;
     justify-content: center;
+    z-index: 10;
+}
+
+#skills-wrapper {
+    background-color: #3E7CB1;
+    flex-direction: column;
     color: white;
-    border-radius: 5px;
     align-self: flex-end;
     margin-right: 5%;
-    box-shadow: 1px 1px 1px black;
 }
 
 #skills-wrapper p{
@@ -115,12 +132,11 @@ nav {
 }
 
 h3 {
-    font-size: 32px;
+    font-size: 34px;
     width: 100%;
     padding: 0px;
     margin: 15px 0px;
     text-align: center;
-    letter-spacing: .05em;
 }
 
 #skills-wrapper li{
@@ -129,20 +145,19 @@ h3 {
     letter-spacing: .05em;
 }
 
-
-
-
-.skill-wrapper {
+.skill-tile {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 320px;
+    width: 340px;
     height: 320px;
     background-color: #054A91;
-    margin: 10px;
+    margin: 30px;
     border-radius: 5px;
     opacity: 70%;
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 1px black;
 }
 
 #top {
@@ -170,6 +185,58 @@ h3 {
 
 #top p {
     margin-top: 31px;
+}
+
+#projects-wrapper {    
+    background-color: #054A91;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #DBE4EE;
+    align-self: flex-end;
+    margin: 100px 5% 100px 0px;
+}
+
+#projects-wrapper h3{
+    margin-top: 50px;
+}
+
+.project-tile {
+    width: 250px;
+    height: auto;
+    background-color: #81A4CD;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px black;
+}
+
+.project-tile img {
+    width: auto;
+    max-height: 100px;
+    margin-top: 25px;
+}
+
+#wordpress-wrapper {
+    background-color: #81A4CD;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #DBE4EE;
+    align-self: flex-start;
+    margin-left: 5%;
+}
+
+#wordpress-wrapper h3 {
+    margin-top: 30px;
+    color: black;
+}
+
+#wordpress-wrapper .project-tile {
+    background-color: #DBE4EE;
+    
 }
 
 
