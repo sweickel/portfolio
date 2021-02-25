@@ -55,7 +55,7 @@ nav {
     width: 100%;
     background-color: #3E7CB1;
     margin: 0px;
-    background-image: url(/portfolio/img/hero.jpg);
+    background-image: url(../img/hero.jpg);
     background-size: cover;
     border-radius: 5px;
 }
@@ -322,6 +322,8 @@ footer {
     background-color: rgba(0, 0, 0, 0.151);
     box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.404);
     font-size: 18px;
+    justify-self: flex-end;
+    margin-bottom: 0px;
 }
 
 footer p {
@@ -342,6 +344,10 @@ footer img {
 }
 
 @media (max-width: 755px) {
+
+    h3 {
+        width: 50%;
+    }
 
     footer {
         align-items: flex-start;
